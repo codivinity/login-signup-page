@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- get your own fontawesome kit to add icons from it -->
+    <script
+      src="https://kit.fontawesome.com/1a4dd4a998.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- add your favorite google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-signup-page</title>
+  </head>
+  <body>
+    <div class="container login-popup">
+      <h1 class="header">
+        <div class="image"></div>
+        <span>Codivinity</span>
+      </h1>
+      <div class="image-container">
+        <img src="./image/travel.svg" alt="travel" />
+      </div>
+      <main class="content">
+        <p>Code Smarter, Create Better</p>
+        <p>Welcome Back, Please login to your account</p>
+        <form onsubmit="onSubmitHandler(event)">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="codivinity2023@gmail.com"
+          />
+          <label for="password">Password</label>
+          <input type="password" name="password" />
+          <div class="remember-container">
+            <label for="remember" class="remember-checkbox">
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <a href="#">Forgot password</a>
+          </div>
+          <div class="button-container">
+            <button type="submit" class="button">Login</button>
+            <button class="button signup-button">Sign Up</button>
+          </div>
+        </form>
+        <div class="login-shortcut">
+          <span>Or, login with</span>
+          <div>
+            <a href="#">Facebook</a>
+            <a href="#">Linked In</a>
+            <a href="#">Google</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="container signup-popup hidden">
+      <h1 class="header">
+        <div class="image"></div>
+        <span>Codivinity</span>
+      </h1>
+      <div class="image-container">
+        <img src="./image/travel.svg" alt="travel" />
+      </div>
+      <main class="content">
+        <p>Code Smarter, Create Better</p>
+        <p>Welcome, Please signup to your account</p>
+        <form onsubmit="onSubmitHandler(event)">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="codivinity2023@gmail.com"
+          />
+          <label for="password">Password</label>
+          <input type="password" name="password" />
+          <label for="retype-password">Confirm Password</label>
+          <input type="password" name="retype-password" />
+          <div class="remember-container">
+            <label for="remember" class="remember-checkbox">
+              <input type="checkbox" name="remember" />
+              Remember me
+            </label>
+            <a href="#">Forgot password</a>
+          </div>
+          <div class="button-container">
+            <button class="button login-button">Login</button>
+            <button type="submit" class="button">Sign Up</button>
+          </div>
+        </form>
+        <div class="login-shortcut">
+          <span>Or, login with</span>
+          <div>
+            <a href="#">Facebook</a>
+            <a href="#">Linked In</a>
+            <a href="#">Google</a>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
